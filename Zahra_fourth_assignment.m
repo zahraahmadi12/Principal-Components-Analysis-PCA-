@@ -1,5 +1,3 @@
-close all
-clear
 %load Yale_32x32.mat
 load Yale_64x64.mat
 faceW = 64;
@@ -17,4 +15,5 @@ Y(i*faceH+1:(i+1)*faceH,j*faceW+1:(j+1)*faceW) = reshape(X(i*11+(j+1),:),[faceH,
  end
 end
 figure()
+
 imagesc(Y);colormap(gray);
